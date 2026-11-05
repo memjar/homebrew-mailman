@@ -1,28 +1,27 @@
 class Mailman < Formula
   desc "CLI to manage emails (AXE fork of Himalaya)"
   homepage "https://github.com/memjar/mailman"
-  version "2.2.1"
-  license "MIT OR Apache-2.0"
+  license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/memjar/mailman/releases/download/v#{version}/mailman.aarch64-darwin.tgz"
-      sha256 "82b21e4c00c98ddfbf98dce7d8e9f9e5a214cfb7b04c12097a11840a812871bb"
+      url "https://github.com/memjar/mailman/releases/download/v2.2.2/mailman.aarch64-darwin.tgz"
+      sha256 "2186ba8e9e1a902da0bb964dc918e3f394ea36e6745ab37d9ea94a4cd8b6006d"
     end
     on_intel do
-      url "https://github.com/memjar/mailman/releases/download/v#{version}/mailman.x86_64-darwin.tgz"
-      sha256 "a19c084a09aec8d53467d1096a8131514e144a87f2d53096c9d814cdbb0ce4d7"
+      url "https://github.com/memjar/mailman/releases/download/v2.2.2/mailman.x86_64-darwin.tgz"
+      sha256 "3cb1e9b28df1e03f65f6e3939cb05118872b579860b16853529077beb659f4ad"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/memjar/mailman/releases/download/v#{version}/mailman.aarch64-linux.tgz"
-      sha256 "a8ef2a9308d4ad50946f66316eb108d68d68d3f67820a768bd01024ba92ce59b"
+      url "https://github.com/memjar/mailman/releases/download/v2.2.2/mailman.aarch64-linux.tgz"
+      sha256 "c37a0fcdba950a8d9e1f4b9e83bf824f42de9910c9d98fb10061bf3128d62516"
     end
     on_intel do
-      url "https://github.com/memjar/mailman/releases/download/v#{version}/mailman.x86_64-linux.tgz"
-      sha256 "1a8c199a5ad92f33fff2b0d9ca544bb9144dbcbdb2a25363878401fce98ad770"
+      url "https://github.com/memjar/mailman/releases/download/v2.2.2/mailman.x86_64-linux.tgz"
+      sha256 "aa29a3bcc28ebde9d54cce9b495b7ab5c2a72be79ccad71c22fb38212e311016"
     end
   end
 
